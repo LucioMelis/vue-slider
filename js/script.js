@@ -32,6 +32,7 @@ const app = new Vue({
     el: '#root',
     data: {
         slides,
+        index: 0
     }
 });
 
