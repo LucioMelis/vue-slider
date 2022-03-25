@@ -33,6 +33,32 @@ const app = new Vue({
     data: {
         slides,
         index: 0
+    },
+    methods: {
+
+        decrementoIndex() {
+            this.index--;
+            if (this.index < 0) {
+                this.index = this.slides.length - 1;
+            }
+        },
+        incrementoIndex() {
+            this.index++;
+            if (this.index === this.slides.length) {
+                this.index = 0;
+            }
+
+        },
+        aggiungiClasse(elemento) {
+
+            const comparazioneImmagini = elemento.image === this.slides[this.index].image;
+            if (comparazioneImmagini) { /*booleana (comparazioneImmagini=== true)*/
+                return 'thumb active'
+            } else if (!comparazioneImmagini) { /*booleana (comparazioneImmagini=== false)*/
+                return 'thumb'
+            }
+
+        }
     }
 });
 
