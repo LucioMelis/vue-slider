@@ -50,14 +50,12 @@ const app = new Vue({
 
         },
         aggiungiClasse(elemento) {
-
             const comparazioneImmagini = elemento.image === this.slides[this.index].image;
             if (comparazioneImmagini) { /*booleana (comparazioneImmagini=== true)*/
                 return 'thumb active'
             } else if (!comparazioneImmagini) { /*booleana (comparazioneImmagini=== false)*/
                 return 'thumb'
             }
-
         }
     }
 });
