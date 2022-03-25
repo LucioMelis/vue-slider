@@ -26,14 +26,19 @@ const slides = [
     }
 ];
 
+// Descrizione:
+// Partendo dal template fornito renderizzare lo slider con Vue
+
 console.log(slides);
 
 const app = new Vue({
     el: '#root',
+    //*********************** DATA ******************/ 
     data: {
         slides,
         index: 0
     },
+    //*********************** METHODS ******************/ 
     methods: {
 
         decrementoIndex() {
@@ -56,12 +61,15 @@ const app = new Vue({
             } else if (!comparazioneImmagini) { /*booleana (comparazioneImmagini=== false)*/
                 return 'thumb'
             }
+        },
+
+        // 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
+        clickThumb(indice) {
+            const indiceThumbItem = indice;
+            this.index = indiceThumbItem;
         }
     }
 });
-
-// Descrizione:
-// Partendo dal template fornito renderizzare lo slider con Vue
 
 // Bonus:
 // 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
