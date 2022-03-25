@@ -28,6 +28,13 @@ const slides = [
 
 console.log(slides);
 
+const app = new Vue({
+    el: '#root',
+    data: {
+        slides,
+    }
+});
+
 // Descrizione:
 // Partendo dal template fornito renderizzare lo slider con Vue
 
