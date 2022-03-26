@@ -64,7 +64,7 @@ const app = new Vue({
         },
 
         // 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
-        clickThumb(indice) {
+        clickThumbs(indice) {
             const indiceThumbItem = indice;
             this.index = indiceThumbItem;
         }

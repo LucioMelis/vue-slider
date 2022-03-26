@@ -32,7 +32,7 @@
                     <div class="prev" @click="decrementoIndex()"></div>
                     <div class="next" @click="incrementoIndex()"></div>
                     <div v-for="(element,indiceElement) in slides" :class="aggiungiClasse(element)"
-                        @click="clickThumb(indiceElement)">
+                        @click="clickThumbs(indiceElement)">
                         <img :src="element.image" :alt="element.title" />
                     </div>
                     <!-- <div class="thumb" class="active">
