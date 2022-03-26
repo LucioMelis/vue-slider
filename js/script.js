@@ -72,7 +72,7 @@ const app = new Vue({
         },
 
         //BONUS 2- applicare l'autoplay allo slider : ogni 3 secondi, cambia immagine automaticamente
-        // SOLUZIONE NON COMPRESA
+        // SOLUZIONE NON COMPRESA TOTALMENTE
         intervalloSlide() {
             const timerSlide = setInterval(() => {
                 this.incrementoIndex();
