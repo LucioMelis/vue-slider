@@ -61,6 +61,8 @@ const app = new Vue({
             } else if (!comparazioneImmagini) { /*booleana (comparazioneImmagini=== false)*/
                 return 'thumb'
             }
+
+            // return comparazioneImmagini ? 'thumb active' : 'thumb';
         },
 
         // 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
