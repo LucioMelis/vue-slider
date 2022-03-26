@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="thumbs">
+                <div class="thumbs" :class="intervalloSlide()">
                     <div class="prev" @click="decrementoIndex()"></div>
                     <div class="next" @click="incrementoIndex()"></div>
                     <div v-for="(element,indiceElement) in slides" :class="aggiungiClasse(element)"
