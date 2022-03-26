@@ -65,7 +65,7 @@ const app = new Vue({
             // return comparazioneImmagini ? 'thumb active' : 'thumb';
         },
 
-        // 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
+        // BONUS 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
         clickThumbs(indice) {
             const indiceThumbItem = indice;
             this.index = indiceThumbItem;
