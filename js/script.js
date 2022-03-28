@@ -80,6 +80,23 @@ const app = new Vue({
             }, 3000);
             // Prova 1 setInterval(this.incrementoIndex, 3000);
         }
+
+        // Soluzione Adriano BONUS 2 - BONUS 3
+        // utilizzare @mouseleave ='startTimer()' e far partire il timer
+        // utilizzare @mouseover = 'stopTimer()' per stoppare il timer 
+        // dentro mouseleave inseriamo una funzione:
+
+        // startTimer() {
+        //     const idTimer = setInterval(this.this.incrementoIndex, 3000);
+        // idTimer la inizializziamo in DATA, come undefined
+        // per richiamarla 
+        // },
+
+        // nel mouseover inseriamo una funzione:
+
+        // stopTimer() {
+        //     clearInterval(this.idTimer);
+        // }
     }
 });
 
