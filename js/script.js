@@ -72,7 +72,7 @@ const app = new Vue({
         },
 
         //BONUS 2- applicare l'autoplay allo slider : ogni 3 secondi, cambia immagine automaticamente
-        // SOLUZIONE NON COMPRESA TOTALMENTE
+        // SOLUZIONE Adriano MIGLIORE
         intervalloSlide() {
             const timerSlide = setInterval(() => {
                 this.incrementoIndex();
@@ -84,18 +84,23 @@ const app = new Vue({
         // Soluzione Adriano BONUS 2 - BONUS 3
         // utilizzare @mouseleave ='startTimer()' e far partire il timer
         // utilizzare @mouseover = 'stopTimer()' per stoppare il timer 
+
         // dentro mouseleave inseriamo una funzione:
+        // idTimer la inizializziamo in DATA, come undefined
+        // per richiamarla e non mettiamo const ma this
+        // inseriamo una condizione -->
 
         // startTimer() {
-        //     const idTimer = setInterval(this.this.incrementoIndex, 3000);
-        // idTimer la inizializziamo in DATA, come undefined
-        // per richiamarla 
+        //     if(this.idTimer === undefined){
+        //          this.idTimer = setInterval(this.incrementoIndex, 3000);
+        //     }
         // },
 
         // nel mouseover inseriamo una funzione:
-
-        // stopTimer() {
-        //     clearInterval(this.idTimer);
+        //  stopTimer() {
+        //   if(this.idTimer !== undefined){
+        //       clearInterval(this.idTimer);
+        //      }
         // }
     }
 });
